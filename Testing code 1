@@ -1,0 +1,38 @@
+
+
+class Main{
+    public static void main(String args[]){
+
+        Student student1 = new Student();  
+        student1.name = "Sanju";
+        student1.age = 20;
+        student1.gender = "Male";
+        student1.roll_no = 25;
+
+        student1.sayName();
+        student1.sayAge();        
+        student1.study();
+    }
+}
+
+class Student{
+    //attributes
+    String name;
+    int age;
+    String gender;
+    int roll_no;
+    
+
+    //functions/methods
+    void sayName(){
+        System.out.println("My name is " + name);
+    }
+
+    void sayAge(){
+        System.out.println("My age is "+ age);
+    }
+
+    void study(){
+        System.out.println(name+ " is studying");
+    }
+}
